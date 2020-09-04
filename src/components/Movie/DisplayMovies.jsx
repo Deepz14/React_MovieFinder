@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./style.css";
 
 export const DisplayMovies = ({image, movie, movieInfo}) => {
     return (
@@ -10,10 +11,15 @@ export const DisplayMovies = ({image, movie, movieInfo}) => {
               alt="alt"
             />
           ) : (
-            <img src={`http://image.tmdb.org/t/p/w185${image}`} alt="originalImg" />
+            <img
+              src={`http://image.tmdb.org/t/p/w185${image}`}
+              alt="originalImg"
+            />
           )}
           <div className="card-body">
-            <a href="!#" className="card-link" onClick={() => movieInfo(movie)}>View Details</a>
+            <li className="card-link" onClick={() => movieInfo(movie)}>
+              View Details
+            </li>
           </div>
         </div>
       </div>

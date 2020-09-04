@@ -8,3 +8,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.card-link{
+    list-style: none;
+    cursor: pointer;
+    color: blue;
+}
